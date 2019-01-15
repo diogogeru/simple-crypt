@@ -134,7 +134,7 @@ class TestEncryption(TestCase):
 class TestCounter(TestCase):
 
     def test_wraparound(self):
-        # https://bugs.launchpad.net/pycrypto/+bug/1093446
+        # https://bugs.launchpad.net/pycryptodome/+bug/1093446
         ctr = Counter.new(8, initial_value=255, allow_wraparound=False)
         try:
             ctr()

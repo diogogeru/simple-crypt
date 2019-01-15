@@ -5,8 +5,8 @@ setup(
     name = 'simple-crypt',
     keywords = ['aes', 'encrypt', 'decrypt', 'encryption', 'decryption', 'pbkdf2', 'hmac', 'secure', 'crypto', 'cryptography'],
     url = 'https://github.com/andrewcooke/simple-crypt',
-    requires = 'pycrypto',
-    install_requires = ['pycrypto'],
+    requires = 'pycryptodome',
+    install_requires = ['pycryptodome'],
     packages = ['simplecrypt'],
     package_dir = {'': 'src'},
     version = '4.1.7',
@@ -42,7 +42,7 @@ Why Should I Use Simple Crypt?
   recommendations `here
   <http://www.daemonology.net/blog/2009-06-11-cryptographic-right-answers.html>`_.
 
-* The established, efficient `pycrypto <https://www.dlitz.net/software/pycrypto>`_
+* The established, efficient `pycryptodome <https://www.pycryptodome.org>`_
   library provides the algorithm implementations (the cipher used is AES256).
 
 * It includes a check (an HMAC with SHA256) to warn when ciphertext
@@ -66,7 +66,7 @@ Why Should I Use Simple Crypt?
 What Else Should I Know?
 ------------------------
 
-* You must also install ``pycrypto``.  **Note** that pycrypto has
+* You must also install ``pycryptodome``.  **Note** that pycryptodome has
   parts written in C so requires a full python install.  On some unix
   systems that may mean adding a package like ``python-dev`` from your
   package manager.
